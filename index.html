@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Photo Gallery</title>
+        <link rel="stylesheet" href="./style.css" />
+        <!-- CDN Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <h1>!!Photo Gallery!!</h1>
+
+        <div class="filter">
+            <h2>Sort by</h2>
+            <div class="filter_section">
+                <div class="dropdown">
+                    <button class="btn_drop">
+                        <span id="currentSort">Title</span>
+                        <span class="arrow">🔻</span>
+                    </button>
+
+                    <ul class="dropdown_content">
+                        <li>
+                            <button>Title</button>
+                        </li>
+                        <li>
+                            <button>Popularity</button>
+                        </li>
+                        <li>
+                            <button>Date</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery_container"></div>
+
+        <!-- Lightbox -->
+        <div class="lightbox_wrapper">
+            <div class="lightbox">
+                <button class="next"></button>
+                <button class="prev"></button>
+                <button class="close"></button>
+                <div class="lightbox_media"></div>
+            </div>
+        </div>
+
+        <script src="./app.js" type="module"></script>
+    </body>
+</html>
